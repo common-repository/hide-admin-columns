@@ -1,0 +1,120 @@
+/* Basic Reset for Standardization */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles for the settings form */
+.hac-wrap.wrap {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    max-width: 70%;
+    margin: 40px auto 15px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for the dropdown and button */
+select, button {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+select:hover, button:hover {
+    border-color: #aaa;
+}
+
+button {
+    background-color: #2271b1;
+    color: white;
+    border: none;
+    margin-top: 1rem !important;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hac-footer-note {
+    text-align: center;
+}
+
+.button.button-hac-donate {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px #3e8e41;
+    transition: all 0.3s;
+}
+
+.button.button-hac-donate:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+.button.button-hac-donate:active, .button.button-hac-donate:focus {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #3e8e41;
+    transform: translateY(2px);
+    color: white;
+}
+
+/* Loader styles */
+#hacLoader {
+    display: inline-block;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #2271b1;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 20px 0 0 10px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Status message styling */
+.status-message {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.status-message.hac-success {
+    background-color: #4CAF50;
+}
+
+.status-message.hac-error {
+    background-color: #F44336;
+}
